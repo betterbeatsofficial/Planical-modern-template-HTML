@@ -158,7 +158,7 @@
   }
 }
 
-.return-policy-container {
+.subscribe-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -168,43 +168,58 @@
   flex-direction: column;
   background-color: #0C0C0C;
 }
-.return-policy-container1 {
+.subscribe-container1 {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: center;
+  justify-content: center;
+}
+.subscribe-image {
+  width: auto;
+  object-fit: cover;
+}
+.subscribe-footer {
+  gap: var(--dl-space-space-fiveunits);
   flex: 1;
   width: 100%;
-  height: 100px;
   display: flex;
   align-items: center;
-  padding-left: var(--dl-space-space-fourunits);
-  padding-right: var(--dl-space-space-fourunits);
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-threeunits);
+  justify-content: center;
+}
+.subscribe-content {
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subscribe-main-content {
+  gap: var(--dl-space-space-fiveunits);
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.return-policy-text {
-  color: rgb(255, 255, 255);
+.subscribe-copyright {
+  gap: var(--dl-space-space-fiveunits);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-.return-policy-text01 {
-  color: var(--dl-color-gray-white);
-  margin-top: var(--dl-space-space-twounits);
-}
-.return-policy-text03 {
-  color: var(--dl-color-gray-white);
-}
-.return-policy-text12 {
-  color: var(--dl-color-gray-white);
-}
-.return-policy-text13 {
-  color: var(--dl-color-gray-white);
-}
-.return-policy-text14 {
-  color: var(--dl-color-gray-white);
-}
-.return-policy-text15 {
-  color: var(--dl-color-gray-white);
-}
-.return-policy-text19 {
-  color: var(--dl-color-gray-white);
-}
-.return-policy-footer {
+.subscribe-footer1 {
   width: 100%;
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
@@ -216,7 +231,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
-.return-policy-separator {
+.subscribe-separator {
   flex: 0 0 auto;
   width: 100%;
   height: 0px;
@@ -234,7 +249,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.return-policy-container2 {
+.subscribe-container2 {
   gap: var(--dl-space-space-unit);
   color: #c4c4c4;
   width: 100%;
@@ -244,16 +259,16 @@
   align-items: flex-start;
   justify-content: center;
 }
-.return-policy-navlink {
+.subscribe-navlink {
   text-decoration: none;
 }
-.return-policy-navlink1 {
+.subscribe-navlink1 {
   text-decoration: none;
 }
-.return-policy-navlink2 {
+.subscribe-navlink2 {
   text-decoration: none;
 }
-.return-policy-text24 {
+.subscribe-text2 {
   color: rgb(196, 196, 196);
   width: 100%;
   font-size: 12px;
@@ -261,12 +276,29 @@
   font-family: Poppins;
   line-height: 21px;
 }
+@media(max-width: 991px) {
+  .subscribe-content {
+    gap: var(--dl-space-space-threeunits);
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .subscribe-main-content {
+    width: 100%;
+  }
+}
 @media(max-width: 767px) {
-  .return-policy-footer {
+  .subscribe-main-content {
+    width: 100%;
+  }
+  .subscribe-copyright {
+    display: flex;
+  }
+  .subscribe-footer1 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .return-policy-separator {
+  .subscribe-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-left: 0px;
     margin-right: 0px;
@@ -274,10 +306,10 @@
   }
 }
 @media(max-width: 479px) {
-  .return-policy-footer {
+  .subscribe-footer1 {
     padding: var(--dl-space-space-unit);
   }
-  .return-policy-separator {
+  .subscribe-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
